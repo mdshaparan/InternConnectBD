@@ -1,108 +1,198 @@
 # InternConnectBD
 
-A full-stack web platform connecting students with companies in Bangladesh through geolocation, skill-matching, and a structured application pipeline.
-**Student Internship Management System (SIMS)**
+Student Internship Management System (SIMS)
 
-A full-stack web platform connecting students with companies in Bangladesh through geolocation, skill-matching, and a structured application pipeline.
+InternConnectBD is a full-stack web platform designed to connect students with companies across Bangladesh through geolocation, skill matching, and a structured internship application pipeline.
 
-1. Project Description
-This system is designed to streamline the internship ecosystem in Bangladesh. It allows companies to post detailed opportunities, enables students to discover and apply to nearby internships with a calculated skill match, and provides tools for companies to shortlist candidates and convert high-performing interns to full-time employees. An admin panel ensures authenticity by verifying all entities and content.
+1. Project Overview
 
-2. Tech Stack & Why
-Frontend:** HTML, CSS, JavaScript, React.js. *Chosen for component-based architecture and rich user interactivity.*
-Backend:** Node.js with Express.js. *Provides a fast, scalable server environment ideal for handling concurrent requests.*
-Mapping/Geolocation:** Google Maps API / Leaflet.js. *Essential for implementing the 5km radius search feature.*
-Authentication:** JWT (JSON Web Tokens). *Secures user sessions across the three distinct user roles (Admin, Company, Student).*
+The Student Internship Management System (SIMS) aims to streamline the internship ecosystem in Bangladesh. The platform enables companies to post detailed internship opportunities while allowing students to discover, apply, and track internships that match their skills and location.
 
-## **Installation & Setup**
+Key goals of the system:
+
+* Reduce the gap between students and companies
+* Improve internship discovery using location-based search
+* Provide transparent skill matching for fair selection
+* Enable companies to manage applicants efficiently
+* Ensure platform authenticity through admin verification
+
+2. Core Features
+
+Student Features
+
+* Profile creation with skills and personal details
+* Discover nearby internships within a **5 km radius**
+* Apply to internships with a **calculated skill match percentage**
+* Track application status in real time
+* Receive and respond to full-time job offers
+* Save internships for later application
+
+Company (HR) Features
+
+* Company verification by admin
+* Post internships with:
+
+  * Required skills
+  * Internship timeline (start month to end month)
+  * Location and application deadline
+* View applicants with skill match percentage
+* Shortlist candidates using an application pipeline
+* Offer full-time jobs with salary details to high-performing interns
+
+Admin Features
+
+* Verify or reject company registrations
+* Moderate internship postings
+* Monitor system activity
+* View reports and statistics for students, companies, internships, and applications
+
+3. Tech Stack & Rationale
+
+### Frontend
+
+1.HTML, CSS, JavaScript**
+
+  Chosen for its component-based architecture and dynamic user interface capabilities.
+Database
+
+2. MySQL (configurable)
+  Used for storing users, internships, applications, and system data.
+
+Mapping & Geolocation
+
+Google Maps API / Leaflet.js
+  Used to implement location-based internship search within a 5 km radius.
+
+Authentication
+
+  Ensures secure authentication and role-based access for Admin, Company, and Student users.
+
+
+4. Installation & Setup
 
 Prerequisites
-Git
 
+* Git
+* Node.js (v18 or higher)
+* npm
 
 Steps
-**Clone the repository:**
+
+Clone the Repository
+
 ```bash
 git clone https://github.com/your-username/student-internship-management-system.git
 cd student-internship-management-system
+```
 
-**Install backend dependencies:**
+#### Install Backend Dependencies
+
 ```bash
 cd backend
 npm install
+```
+Install Frontend Dependencies
 
-
-**Install frontend dependencies:**
 ```bash
 cd ../frontend
 npm install
+```
 
-How to Use
-1. Authentication & Registration**
-Navigate to the homepage.
-Students & Companies can register using their institutional/company emails.
-Admins are pre-configured.
+---
 
-Test Credentials:
-Student: `shahaparanmd474@gmail.com` / `12345678’
-Company:`company@test.com` / `password123`
-Admin:`admin@system.com` / `adminpass`
+5. How to Use
+
+Authentication & Registration
+
+* Navigate to the homepage
+* Students and companies can register using their email addresses
+* Admin accounts are pre-configured
+
+Test Credentials
+
+Student:[shahaparanmd474@gmail.com](mailto:shahaparanmd474@gmail.com) / 12345678
+Company: [company@test.com](mailto:company@test.com) / password123
+Admin:[admin@system.com](mailto:admin@system.com) / adminpass
 
 
-2. User-Specific Workflows**
-Student:
-Complete your profile and add skills.
-Use the "Nearby Internships" map to find opportunities within 5km.
-Apply to an internship; the system will show your **Skill Match Percentage**.
-Track applications and respond to job offers from the dashboard.
+6. User Workflows
 
-Company (HR):
-Get verified by Admin.
-Post an internship by specifying skills, timeline (start/end month), and location.
-View applicants with their skill match score in the application pipeline.
-Shortlist candidates and send full-time job offers with salary details.
+Student Workflow
 
-Admin:
-Verify new company registrations from the admin panel.
-Moderate all internship postings.
-View system-wide reports and statistics.
+1. Register and log in
+2. Complete profile and add skills
+3. View nearby internships on the map
+4. Apply and view skill match percentage
+5. Track application status
+6. Accept or reject job offers
 
-Credits
-Developed By:
-Md Shaparan Ahammed (ID: 23-51096-1) - [GitHub Profile](https://github.com/yourprofile)
-Primary Responsibilities: Company Features, Backend Logic, System Integration
-Risa, Sumiya Haider (ID: 23-50860-1) - [GitHub Profile](https://github.com/yourprofile)
-Primary Responsibilities: Student Features, Frontend Design, Admin Panel
+Company Workflow
 
-Course: Web Technology (Fall 25-26), Section T.
-Acknowledgements:
-Thanks to our course instructor for guidance.
-Inspired by modern platforms like LinkedIn, Glassdoor, and local job boards.
+1. Register and get verified by admin
+2. Post internship details
+3. Review applicants with skill match scores
+4. Shortlist candidates
+5. Send job offers and track responses
 
-## License
-This project is licensed under the **GPL-3.0 License**. See the `LICENSE` file for details. This allows others to make modifications and use it commercially, provided they disclose their source.
+Admin Workflow
 
-## Future Features & Challenges
-Challenges Faced:
-Implementing accurate real-time geolocation filtering for the 5km radius.
-Designing a fair and transparent algorithm for calculating the skill match percentage.
-Managing state for the complex, multi-role application flow.
+1. Verify companies
+2. Moderate internship posts
+3. Monitor system statistics
 
-Planned Future Implementations:
-In-app messaging system for direct student-company communication.
-Review and rating system** for companies and interns post-internship.
-Automated resume parsing** to auto-fill student skills.
-Bulk application processing** and email notifications for companies.
-Analytics dashboard** for companies to track internship post performance.
+7. Project Credits
 
-Contribute
-We welcome contributions! Please follow these steps:
-Open a Pull Request. Please ensure your code adheres to the existing style.
+Developed By
 
-Tests
-To run the backend test suite (using Jest):
+Md Shaparan Ahammed
+ID: 23-51096-1
+Primary Responsibilities:
+
+Company module
+* Backend logic
+* System integration
+
+Risa, Sumiya Haider
+ID: 23-50860-1
+Primary Responsibilities:
+
+Student module
+Frontend design
+Admin panel
+
+Course: Web Technology (Fall 2025–26)
+Section: T
+
+
+8. Challenges Faced
+
+* Implementing accurate geolocation filtering within a 5 km radius
+* Designing a fair and transparent skill match algorithm
+* Managing application flow for multiple user roles
+
+9. Future Enhancements
+
+Planned improvements include:
+
+* In-app messaging between students and companies
+* Review and rating system after internships
+* Automated resume parsing
+* Bulk application processing
+* Email notifications
+* Company analytics dashboard
+
+
+## 10. Testing
+
+To run backend tests:
+
 ```bash
 cd backend
 npm test
+```
 
-More test suites for frontend components and integration are under development.*
+Frontend and integration tests are under development.
+
+
+
+
