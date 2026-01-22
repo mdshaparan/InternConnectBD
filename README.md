@@ -1,14 +1,12 @@
-# InternConnectBD
-
-Student Internship Management System (SIMS)
+# InternConnectBD- Student Internship Management System (SIMS)
 
 InternConnectBD is a full-stack web platform designed to connect students with companies across Bangladesh through geolocation, skill matching, and a structured internship application pipeline.
 
-1. Project Overview
+## 1. Project Overview
 
 The Student Internship Management System (SIMS) aims to streamline the internship ecosystem in Bangladesh. The platform enables companies to post detailed internship opportunities while allowing students to discover, apply, and track internships that match their skills and location.
 
-Key goals of the system:
+## Key goals of the system:
 
 * Reduce the gap between students and companies
 * Improve internship discovery using location-based search
@@ -16,7 +14,7 @@ Key goals of the system:
 * Enable companies to manage applicants efficiently
 * Ensure platform authenticity through admin verification
 
-2. Core Features
+## 2. Core Features
 
 Student Features
 
@@ -46,7 +44,7 @@ Admin Features
 * Monitor system activity
 * View reports and statistics for students, companies, internships, and applications
 
-3. Tech Stack & Rationale
+## 3. Tech Stack & Rationale
 
 ### Frontend
 
@@ -110,9 +108,9 @@ Authentication & Registration
 
 Test Credentials
 
-Student:[shahaparanmd474@gmail.com](mailto:shahaparanmd474@gmail.com) / 12345678
-Company: [company@test.com](mailto:company@test.com) / password123
-Admin:[admin@system.com](mailto:admin@system.com) / adminpass
+Student:[shahaparanmd474@gmail.com] / passwoed: 12345678
+Company: [itltd@gmail.com] / password: aaaaaaaa
+Admin:[admin@internconnectbd.com] / password: admin@123
 
 
 6. User Workflows
@@ -126,7 +124,7 @@ Student Workflow
 5. Track application status
 6. Accept or reject job offers
 
-Company Workflow
+## Company Workflow
 
 1. Register and get verified by admin
 2. Post internship details
@@ -134,7 +132,7 @@ Company Workflow
 4. Shortlist candidates
 5. Send job offers and track responses
 
-Admin Workflow
+## Admin Workflow
 
 1. Verify companies
 2. Moderate internship posts
@@ -142,9 +140,9 @@ Admin Workflow
 
 7. Project Credits
 
-Developed By
+## Developed By
 
-Md Shaparan Ahammed
+#### Md Shaparan Ahammed
 ID: 23-51096-1
 Primary Responsibilities:
 
@@ -152,7 +150,7 @@ Company module
 * Backend logic
 * System integration
 
-Risa, Sumiya Haider
+#### Risa, Sumiya Haider
 ID: 23-50860-1
 Primary Responsibilities:
 
